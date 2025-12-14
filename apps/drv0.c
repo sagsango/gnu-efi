@@ -1,3 +1,4 @@
+/* XXX: efi app (and bootloader is also an efi app) */ 
 /*
  * Copyright (C) 2013 David Decotigny <decot@googlers.com>
  *
@@ -145,7 +146,7 @@ Drv0Unload(IN EFI_HANDLE ImageHandle)
   return EFI_SUCCESS;
 }
 
-
+/* XXX: efi_main gets the second arg as EFI_SYSTEM_TABLE */
 EFI_STATUS
 efi_main (EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SysTab)
 {
